@@ -1,6 +1,8 @@
 import 'package:app/config/routes.dart';
+import 'package:app/presentation/features/authentication/authentication.dart';
 import 'package:app/presentation/features/test_with_params/test_with_params_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class MyHomeScreen extends StatefulWidget {
   MyHomeScreen({Key key, this.title = "Home"}) : super(key: key);
@@ -17,22 +19,32 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   }
 
   void _routeToTestWithParams() {
-    Navigator.of(context)
-        .pushNamed(AppRoutes.test_with_params, arguments: TestWithParamsParameters(10));
+    Navigator.of(context).pushNamed(AppRoutes.test_with_params,
+        arguments: TestWithParamsParameters(10));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Home'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.exit_to_app),
+            onPressed: () {
+              BlocProvider.of<AuthenticationBloc>(context).add(
+                LoggedOut(),
+              );
+            },
+          )
+        ],
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Hello World",
+              "Hello World ${widget.title}",
             ),
             RaisedButton(
               onPressed: _routeToTest,
