@@ -1,12 +1,12 @@
-import 'package:app/config/routes.dart';
-import 'package:app/data/repositories/user_repository.dart';
-import 'package:app/presentation/features/authentication/authentication.dart';
-import 'package:app/presentation/features/home/home.dart';
-import 'package:app/presentation/features/sign_in/sign_in.dart';
-import 'package:app/presentation/features/splash/splash.dart';
-import 'package:app/presentation/features/test_web_view/test_web_view.dart';
-import 'package:app/presentation/features/test_with_params/test_with_params.dart';
-import 'package:app/presentation/features/test/test.dart';
+import 'package:appCRSM/config/routes.dart';
+import 'package:appCRSM/data/repositories/user_repository.dart';
+import 'package:appCRSM/presentation/features/authentication/authentication.dart';
+import 'package:appCRSM/presentation/features/home/home.dart';
+import 'package:appCRSM/presentation/features/sign_in/sign_in.dart';
+import 'package:appCRSM/presentation/features/splash/splash.dart';
+import 'package:appCRSM/presentation/features/test_web_view/test_web_view.dart';
+import 'package:appCRSM/presentation/features/test_with_params/test_with_params.dart';
+import 'package:appCRSM/presentation/features/test/test.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 
@@ -52,7 +52,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  // This widget is the root of your appCRSMlication.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

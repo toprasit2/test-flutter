@@ -1,6 +1,6 @@
-import 'package:app/config/storage.dart';
+import 'package:appCRSM/config/storage.dart';
 import 'dart:async';
-import 'package:app/data/repositories/user_repository.dart';
+import 'package:appCRSM/data/repositories/user_repository.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'authentication_event.dart';

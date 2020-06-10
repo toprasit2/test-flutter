@@ -1,5 +1,5 @@
-import 'package:app/data/repositories/user_repository.dart';
-import 'package:app/presentation/features/authentication/authentication.dart';
+import 'package:appCRSM/data/repositories/user_repository.dart';
+import 'package:appCRSM/presentation/features/authentication/authentication.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_sign_in/google_sign_in.dart';

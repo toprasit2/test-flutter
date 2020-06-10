@@ -1,6 +1,6 @@
-import 'package:app/config/routes.dart';
-import 'package:app/presentation/features/authentication/authentication.dart';
-import 'package:app/presentation/features/test_with_params/test_with_params_screen.dart';
+import 'package:appCRSM/config/routes.dart';
+import 'package:appCRSM/presentation/features/authentication/authentication.dart';
+import 'package:appCRSM/presentation/features/test_with_params/test_with_params_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
