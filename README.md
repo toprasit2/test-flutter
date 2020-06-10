@@ -18,3 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Setting
 Download google-services.json from firebase and put it in android/app
+
+## Webview in Js
+    Print.postMessage("Hello World");
+Print is channel name

@@ -23,6 +23,10 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
         arguments: TestWithParamsParameters(10));
   }
 
+  void _routeToTestWebView() {
+    Navigator.of(context).pushNamed(AppRoutes.test_web_view);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,6 +58,12 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
               onPressed: _routeToTestWithParams,
               child: Text(
                 'with params',
+              ),
+            ),
+            RaisedButton(
+              onPressed: _routeToTestWebView,
+              child: Text(
+                'web view',
               ),
             )
           ],

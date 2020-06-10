@@ -4,6 +4,7 @@ import 'package:app/presentation/features/authentication/authentication.dart';
 import 'package:app/presentation/features/home/home.dart';
 import 'package:app/presentation/features/sign_in/sign_in.dart';
 import 'package:app/presentation/features/splash/splash.dart';
+import 'package:app/presentation/features/test_web_view/test_web_view.dart';
 import 'package:app/presentation/features/test_with_params/test_with_params.dart';
 import 'package:app/presentation/features/test/test.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -69,6 +70,7 @@ class MyApp extends StatelessWidget {
   Map<String, WidgetBuilder> _registerRoutes() {
     return <String, WidgetBuilder>{
       AppRoutes.home: (context) => MyHomeScreen(),
+      AppRoutes.test_web_view: (context) => TestWebViewScreen(),
       // AppRoutes.test: (context) => TestScreen(title: 'TEST Page')
       AppRoutes.test: (context) => _authGuard(TestScreen(title: 'READY AUTH')),
     };

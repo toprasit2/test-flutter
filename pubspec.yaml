@@ -46,6 +46,7 @@ dependencies:
   # check internet connection availability
   data_connection_checker: ^0.3.4
   get_it:
+  webview_flutter: ^0.3.22+1
 
 dev_dependencies:
   flutter_test:
